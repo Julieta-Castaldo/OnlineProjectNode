@@ -1,5 +1,10 @@
-let mongoose = require ('mongoose');
+var mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://gonzalo:gonzalo1234@cluster0.km0wp.mongodb.net/test?retryWrites=true&w=majority', {userNewUrlParser: true}, function(error){
+    if (error){
+        throw error;
+    } else {
+        console.log('Conectado a MongoDB');
+    }
+});
 
-mongoose.connect('mongodb+srv://julietacast:juli1234@cluster0.qbeg2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {useMongoClient: true});
-
-module.exports = mongoose;
+module.exports = mongoose;   
