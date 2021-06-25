@@ -1,4 +1,4 @@
-const mongoose = require('../bin/mongodb');
+const mongoose = require('../config/conexion');
 
 const projectSchema = new mongoose.Schema({  //esquema del documento para la colección productos, crea un modelo y lo exporta
     name:String,
