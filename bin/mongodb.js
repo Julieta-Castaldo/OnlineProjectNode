@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/pwa2020', { UserNewUrlParser: true}, function (error) {
+mongoose.connect('mongodb+srv://julietacast:juli1234@cluster0.qbeg2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { UserNewUrlParser: true}, function (error) {
 
        if(error){
            throw error;
